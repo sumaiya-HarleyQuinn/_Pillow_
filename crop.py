@@ -1,5 +1,7 @@
-from PIL import Image
-
-img = Image.open("Pictures/girl.jpg")
-imgCrop = img.crop(box=(50,50,200,500))
-imgCrop.show()
+from PIL import Image 
+  
+# creating a object 
+image = Image.open("Pictures/c2.jpg")
+area = (475, 175, 725, 350)
+cropped = image.crop(area)
+cropped.show()
